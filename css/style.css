@@ -187,6 +187,18 @@ video{
   align-items: center;
 }
 
+.contDer a{
+  text-align: center;
+}
+
+h6{
+  font-family: montserratRegular;
+  color: #7E8B8C;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .contDer h6{
   padding-top: 15px;
 }
@@ -309,14 +321,11 @@ video{
   background-color: red;
 }
 
-h6{
-  font-family: montserratRegular;
-  color: #7E8B8C;
-}
 
 h3{
   font-family: coolvetica;
   color: #7E8B8C; 
+  text-align: center;
 }
 
 .btn{
