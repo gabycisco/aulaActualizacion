@@ -222,13 +222,17 @@ h6{
   padding-bottom: 100px;
 }
 
-.contIcons{
+.contIcons, .contBotones{
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   justify-content: center;
 
+}
+
+.contBotones{
+  padding-top: 30px;
 }
 
 .contIconsGral a, .contIconsGral2 a{
@@ -324,12 +328,11 @@ h6{
 
 h3{
   font-family: coolvetica;
-  color: #7E8B8C; 
+  color: #8E44AC; 
   text-align: center;
 }
 
 .btn{
-  _background-color: #169F85;
   background-color: #1BBB9A;
   color: white;
   font-family: coolvetica;
@@ -341,4 +344,14 @@ h3{
 .btn:hover{
   background-color: #169F85;
   color: white;
+}
+
+.seleccionable { transition: all .2s ease-in-out; }
+.seleccionable:hover { transform: scale(1.1); }
+
+h5{
+  color: grey;
+  font-family: montserratRegular;
+  font-weight: 500;
+  font-size: 1rem;
 }
