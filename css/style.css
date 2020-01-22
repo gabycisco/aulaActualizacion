@@ -6,10 +6,10 @@ body, html{
 
 }
 
-.container-fluid{
+/* .container-fluid{
   display: flex;
   justify-content: center;
-}
+} */
 /*FONTS*/
 
 @font-face {
@@ -60,8 +60,9 @@ body, html{
 
 .footer{
   _background-color: #EBE2FF;
-  background-color: #1BBB9A;
-  padding-top: 10px;
+  _tbackground-color: #1BBB9A;
+  background-color: #8E44AC;
+  padding-top: 15px;
   padding-bottom: 10px;
   padding-right: 15px;
   padding-left: 15px;
@@ -76,32 +77,73 @@ body, html{
 
 .contenedor-principal{
   height: 100vh;
-  _overflow: hidden;
-  _padding-top: 56px;
-  _background-color: rgba(255, 255, 255, .90);
-  _background-color: #F5F1FF;
-  _position: relative;
   display:flex;
   justify-content: center;
   align-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  _padding-left: 30px;
+  _padding-right: 30px;
   padding-left: 0;
   padding-right: 0;
-  background-image: url(../img/background.svg);
-  background-repeat: no-repeat;
-  _background-size: cover;
-  max-width: 1366px;
-  background-position: bottom left;
 }
 
-
-@media screen and (min-width: 1366px) {
-  .contenedor-principal{
+/* body{
+  _background-image: url(../img/background.svg);
   background-image: url(../img/backgroundCut.svg);
-  }
+  background-repeat: no-repeat;
+  _max-width: 1366px;
+  background-position: bottom left; */
 }
 
+.imgFondo{
+  width: 110%;
+  z-index: -200;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.imgFondo img{
+  width: 100%;
+  _top: 150px;
+  position: absolute;
+  right: 0;
+}
+
+.container-fluid{
+  position: fixed;
+  z-index: 100;
+}
+@media screen and (min-width: 1366px) {
+  /* body{
+    background-image: url(../img/backgroundCut.svg);
+  } */
+  .imgFondo{
+    width: 100%;
+    z-index: -200;
+    _background-color: green;
+  }
+  .imgFondo img{
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    
+  }
+  .contBotDer{
+    margin-bottom: 0px;
+  }
+  
+  .contDer{
+    align-content: center!important;
+    padding-top: 0!important;
+    _background-color: red;
+  }
+  
+}
+
+.navbar-brand{
+  font-family: coolvetica;
+  font-weight: 400;
+}
 
 #nav-tabContent{
   
@@ -174,24 +216,17 @@ video{
 }
 
 .contIzq{
-  _background-color: #F5F1FF;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-
+  align-items: flex-end;
+  padding-bottom: 145px;
+  _background-color: blue;
 }
 
-.contIzq h1{
-  padding-top: 15px;
-  color: #1BBB9A;
-  font-family: coolvetica;
-  font-weight: 400;
-}
+
 
 .contIzq img{
-  _width: 80%;
+  width: 95%;
 }
 
 .contDer{
@@ -200,27 +235,45 @@ video{
   display: flex;
   justify-content: center;
   width: max-content;
-  align-content: center;
+  align-content: flex-start;
+  padding-top: 100px;
   align-items: center;
 }
 
-.contDer a{
-  text-align: center;
+.contDerCentro{
+  _background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  align-content: flex-start;
+  padding-top: 190px;
+  align-items: center;
+  padding-left: 40px;
 }
+
+
+.contDer a, .contDer h6, .contDer h3,.contDer button{
+  text-align: left;
+}
+.contDerCentro a, .contDerCentro h6, .contDerCentro h3,.contDerCentro button{
+  text-align: left;
+}
+
 
 h6{
   font-family: montserratRegular;
   color: #7E8B8C;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1rem!important;
   text-align: center;
 }
 
-.contDer h6{
+.contDer h6, .contDerCentro h6{
   padding-top: 15px;
 }
 
-.contDer button{
+.contDer button, .contDerCentro button{
   margin-top: 15px;
 }
 
@@ -230,30 +283,17 @@ h6{
 }
 
 .contIconsGral{
-  padding-top: 25px;
+  margin-top: 25px;
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content: space-around;
-  _position: relative;
-  padding-bottom: 100px;
-}
-
-.contIcons, .contBotones{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.contBotones{
-  padding-top: 30px;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+  _background-color: red;
+  margin-left: -60px;
 }
 
 .contIconsGral a, .contIconsGral2 a{
-  _padding-top: 30px;
   display: flex;
   justify-content: center;
   _align-content: center;
@@ -263,32 +303,45 @@ h6{
   text-align: center;
 }
 
-.contIconsGral2{
-  padding-top: 20px;
+.contIconsGral h4{
+  color: white;
+  font-family: coolvetica;
+  font-weight: 400;
+  font-size: 30px;
+}
+.contIcons, .contBotones{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: right;
+
 }
 
-.header, .infoTit, .info{
-  background-color: white;
+.contBotones{
+  padding-top: 30px;
+  margin-left: -30px;
+}
+
+
+.contBotDer{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+
+.contBotones{
+  padding-top: 30px;
+}
+
+
+.tarjetaContenedor{
   border: 1px solid rgba(0,0,0,.125);
   padding: 25px;
-  margin-right: 20px;
-}
-
-.header, .info{
-  margin-bottom: 20px;
-}
-
-.infoTit{
-  padding-bottom: 2px;
-  border-bottom: 0px;
-}
-
-.infoTit h5{
-  font-weight: lighter;
-}
-
-.header h2{
-  text-align: center;
+  background-color: white;
+  margin-bottom: 50px;
+  
 }
 
 .navegador{
@@ -318,12 +371,7 @@ h6{
   font-weight: 700;
 }
 
-.contIconsGral h4{
-  color: white;
-  font-family: coolvetica;
-  font-weight: 400;
-  font-size: 30px;
-}
+
 
 .atras{
   z-index: 100;
@@ -349,11 +397,18 @@ h3{
   text-align: center;
 }
 
+.contDer h3, .contDerCentro h3{
+  font-family: coolvetica;
+  color: #7E8B8C;
+  text-align: center;
+  text-align: left;
+}
+
 .btn{
   background-color: #1BBB9A;
   color: white;
   font-family: coolvetica;
-  font-size: 15px;
+  font-size: 1.2rem;
   border: 2px solid #8E44AC;
 }
 
@@ -370,27 +425,33 @@ h5{
   color: white;
   font-family: montserratRegular;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .titulo{
-  font-size: 50px;
-  line-height: 60%;  
-  text-shadow: -4px 3px 0 #white;
-
+  margin-bottom: 70px;
 }
 
-.contIzq a{
+.contDer a{
   text-decoration: none;
 }
 
-h1{
-  text-shadow: 2px 4px white;
+.contDer h1{
+  color: #1BBB9A;
+  font-family: coolvetica;
+  font-weight: 400;
+  _font-size: 85px;
+  font-size: 5.2rem;
+  line-height: 75%;
 }
 
-.contIzq img{
-  width: 70%;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-bottom: 50px;
+.lateralMenu{
+  background-color: red;
+  _height: 100vh;
 }
+
+.lateralMain{
+  background-color: blue;
+  height: 100vh;
+}
+
