@@ -137,6 +137,9 @@ body, html{
     padding-top: 0!important;
     _background-color: red;
   }
+  .lateralMain{
+    height: 85vh!important;
+  }
   
 }
 
@@ -198,10 +201,38 @@ video{
   padding-right: 15px;
 }
 
+.list-group-item {
+  padding: .45rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  font-size: .9rem;
+  font-family: montserratRegular;
+  _font-family: coolvetica;
+  font-weight: 500;
+  border-radius: 0px!important;
+}
+
+.radiusLast{
+  border-bottom-left-radius: .45rem!important;
+  border-bottom-right-radius: .45rem!important;
+}
+.radiusFirst{
+  border-top-left-radius: .45rem!important;
+  border-top-right-radius: .45rem!important;
+}
+
 .list-group-item.active {
   color: #fff;
-  background-color: #1BBB9A!important;
-  border-color:  #1BBB9A!important;
+  background-color: #8E44AC;!important;
+  border-color:  #8E44AC;!important;
+  font-weight: bold;
+  font-size: .9rem;
+  font-family: montserratRegular;
+}
+
+.list-group a{
+  text-decoration: none;
 }
 
 #videoFondo{
@@ -278,8 +309,9 @@ h6{
 }
 
 .resaltado{
-  color: #8E44AC;
+  color: #8E44AC!important;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .contIconsGral{
@@ -327,8 +359,15 @@ h6{
 .contBotDer{
   display: flex;
   justify-content: flex-start;
-  padding-top: 50px;
-  margin-bottom: 80px;
+  padding-top: 0px;
+  _margin-bottom: 80px;
+}
+
+.contBotIzq{
+  display: flex;
+  justify-content: flex-end;
+  _padding-top: 50px;
+  margin-bottom: 65px;
 }
 
 .contBotones{
@@ -337,13 +376,59 @@ h6{
 
 
 .tarjetaContenedor{
-  border: 1px solid rgba(0,0,0,.125);
+  _border: 1px solid rgba(0,0,0,.125);
   padding: 25px;
   background-color: white;
-  margin-bottom: 50px;
-  
+  margin-bottom: 30px;
+  border-radius: .45rem;  
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  -moz-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
 }
 
+.tarjetaContenedorResaltada{
+  border: 1px solid #8f599f;
+  padding: 25px;
+  _background-color:#1BBB9A;
+  _background-color: #8f599f; 
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: .45rem;  
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  -moz-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+}
+
+.tarjetaContenedorResaltada h3, .tarjetaContenedorResaltada p,.tarjetaContenedorResaltada hr{
+  color: #8f599f!important;
+}
+
+.tarjetaTitulo{
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.tarjetaTitulo h3{
+  font-family: coolvetica;
+  color: #7E8B8C;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.tarjetaMain{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.tarjetaMain p{
+  font-family: montserratRegular;;
+  color: #7E8B8C;
+  text-align: center;
+  text-align: left;
+  font-size: 1rem;
+}
 .navegador{
   padding-top: 5px;
   padding-bottom: 2px;
@@ -446,12 +531,79 @@ h5{
 }
 
 .lateralMenu{
-  background-color: red;
+  background-color: #F5F1FF
   _height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0;
 }
 
 .lateralMain{
-  background-color: blue;
-  height: 100vh;
+  background-color: #f7f7f7;
+  margin-top: 54px;
+  height: 89vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow-y: scroll;
+  padding-top: 25px;
 }
 
+
+
+.h2{
+  color: white;
+  font-family: coolvetica;
+  font-weight: 400;
+  _font-size: 85px;
+  font-size: 5.2rem;
+  line-height: 75%;
+}
+
+
+/* tarjeta interna */
+.cardContenedor{
+  border: 1px solid #1BBB9A;
+  padding: 0px;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: .45rem;  
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  -moz-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  width: 32%;
+}
+
+.cardTitulo{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #1BBB9A;
+}
+
+.cardTitulo h3{
+  font-family: coolvetica;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.cardMain{
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.cardMain p{
+  font-family: montserratRegular;;
+  color: #7E8B8C;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.cardMain li{
+  font-family: montserratRegular;;
+  color: #7E8B8C;
+  text-align: left;
+  font-size: .85rem;
+}
