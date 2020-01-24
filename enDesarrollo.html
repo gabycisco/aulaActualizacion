@@ -15,6 +15,7 @@
         <div class="contenedor-principal row" style="padding-left: 0; padding-right: 0;">
           <nav class="navbar fixed-top navbar-light bg-light">
             <a href="inicio.html"><span class="navbar-brand mb-0 h1 titnav" style="color: white;">Aula de actualización</span></a>
+            <a class="seleccionable" href="#" data-toggle="modal" data-target="#modal"><img src="img/ayuda.svg" width="35px" alt=""></a>
           </nav>
           <div class="imgFondo">
             <img src="img/backgroundCut.svg" alt="">
@@ -36,17 +37,37 @@
         </div>
         <footer>
           <nav class="footer fixed-bottom  row">            
+            <div class="col-12 row">
               <div class=" col-6 footerIzquierdo ">
-                <h5>© 2020 Diseño Digital & UX.</h5>
-              </div>
-              <div class="col-6 footerDerecho" >
                 <h5>Entrenamiento y Scripting</h5>
               </div>
+              <div class="col-6 footerDerecho" >
+                <img src="img/firmaDerecha.svg" height="20px" alt="" style="padding-right: 45px;"><img src="img/firmaIzquierda.svg" height="20px" alt="">
+              </div>
+            </div>
           </nav>
         </footer>
     </div>
 
-    
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title colorVioleta importante" >Info</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>En breve entraras un nuevo contenido en esta pantalla...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn buttonPrimary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

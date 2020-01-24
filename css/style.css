@@ -1,43 +1,52 @@
-body, html{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+body, html{margin: 0; padding: 0; border: 0; box-sizing: border-box;}
 
-}
+/*INICIO - FONTS*/
+  
+  @font-face {font-family:coolveticaCompressed; src:url(../fonts/coolveticacompressedrg.ttf);}
 
-/* .container-fluid{
-  display: flex;
-  justify-content: center;
-} */
-/*FONTS*/
+  @font-face {font-family:coolveticaCondensed; src:url(../fonts/coolveticacondensedrg.ttf);}
 
-@font-face {
-  font-family:coolveticaCompressed;
-  src:url(../fonts/coolveticacompressedrg.ttf);
-}
+  @font-face {font-family:coolveticaCrammed; src:url(../fonts/coolveticacrammedrg.ttf);}
+  
+  @font-face {font-family:coolvetica; src:url(../fonts/coolveticarg.ttf);}
+  
+  @font-face {font-family:montserratRegular; src:url(../fonts/Montserrat-Regular.ttf);}
 
+/* FIN - FONTS */
 
-@font-face {
-  font-family:coolveticaCondensed;
-  src:url(../fonts/coolveticacondensedrg.ttf);
-}
+/* INICIO - ESTILOS GENERALES */
 
-@font-face {
-  font-family:coolveticaCrammed;
-  src:url(../fonts/coolveticacrammedrg.ttf);
-}
+  /*BORDE DE CONTENEDOR*/
+  .borderVioleta{border: 2px solid #8f599f;} 
+  .borderVerde{border: 2px solid #1BBB9A;}
 
-@font-face {
-  font-family:coolvetica;
-  src:url(../fonts/coolveticarg.ttf);
-}
+  /*TEXTO - COLOR */
+  .colorVioleta{color: #8f599f!important;}
+  .colorVerde{color: #1BBB9A!important;}
+  .colorBlanco{color: white!important;}
 
-@font-face {
-  font-family:montserratRegular;
-  src:url(../fonts/Montserrat-Regular.ttf);
-}
+  /*TEXTO - DESTACADO */
+  .importante{font-size: 1.2rem; font-weight: bold;}
+  .medio{font-size: 1rem; font-weight: bold;}
+  .minimo{font-size: .85rem; font-weight: bold;}
 
+  /*LINEA SEPARADORA */
+  .hrVioleta hr, .hrcolor {height: 1px; border: 0; _color: #8f599f; background-color: #8f599f;}
+  .hrVerde hr, .hrcolor {height: 1px; border: 0; color: #1BBB9A; background-color: #1BBB9A;}
+
+  /*HIPERVINCULOS */
+  .noDecoration{text-decoration: none;}
+
+  /*FUENTES */
+  .fontPrimary{font-family: coolvetica!important;}
+  .fontSecondary{font-family: montserratRegular!important;}
+
+  /* BOTONES */
+  .buttonPrimary{background-color: #8f599f; color: white;border: 2px solid #8f599f; font-family: coolvetica; font-size: 1.1rem; }
+  .buttonPrimary:hover{background-color: white; color: #8E44AC;border: 2px solid #8E44AC;}
+  .buttonSecondary{background-color: #1BBB9A; color: white;border: 2px solid #1BBB9A; font-family: coolvetica; font-size: 1.1rem; }
+  .buttonSecondary:hover{background-color: white; color: #1BBB9A;border: 2px solid #1BBB9A;}
+/* FIN - ESTILOS GENERALES */
 
 .preload * {
   -webkit-transition: none !important;
@@ -61,10 +70,11 @@ body, html{
 .footer{
   _background-color: #EBE2FF;
   _tbackground-color: #1BBB9A;
-  background-color: #8E44AC;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-right: 15px;
+  _background-color: #8E44AC;
+  background-color: #5c3289;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  _padding-right: 15px;
   padding-left: 15px;
 }
 
@@ -195,10 +205,8 @@ video{
 
 .footerDerecho{
   display: flex;
-  align-content: right;
   justify-content: flex-end;
-  _flex-wrap: wrap;
-  padding-right: 15px;
+  padding-right: 0px;
 }
 
 .list-group-item {
@@ -386,22 +394,7 @@ h6{
   box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
 }
 
-.tarjetaContenedorResaltada{
-  border: 1px solid #8f599f;
-  padding: 25px;
-  _background-color:#1BBB9A;
-  _background-color: #8f599f; 
-  background-color: white;
-  margin-bottom: 30px;
-  border-radius: .45rem;  
-  -webkit-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
-  -moz-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
-  box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
-}
 
-.tarjetaContenedorResaltada h3, .tarjetaContenedorResaltada p,.tarjetaContenedorResaltada hr{
-  color: #8f599f!important;
-}
 
 .tarjetaTitulo{
   padding-top: 20px;
@@ -489,19 +482,7 @@ h3{
   text-align: left;
 }
 
-.btn{
-  background-color: #1BBB9A;
-  color: white;
-  font-family: coolvetica;
-  font-size: 1.2rem;
-  border: 2px solid #8E44AC;
-}
 
-
-.btn:hover{
-  background-color: #169F85;
-  color: white;
-}
 
 .seleccionable { transition: all .2s ease-in-out; }
 .seleccionable:hover { transform: scale(1.1); }
@@ -595,15 +576,16 @@ h5{
 }
 
 .cardMain p{
-  font-family: montserratRegular;;
+  font-family: montserratRegular;
   color: #7E8B8C;
   text-align: left;
   font-size: 1rem;
 }
 
 .cardMain li{
-  font-family: montserratRegular;;
+  font-family: montserratRegular;
   color: #7E8B8C;
   text-align: left;
   font-size: .85rem;
 }
+

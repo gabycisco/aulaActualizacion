@@ -12,7 +12,8 @@
 
   <div class="container-fluid">
     <nav class="navbar fixed-top navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1 titnav" style="color: white;">Aula de actualización</span>
+      <span class="navbar-brand mb-0 h1 titnav" style="color: white;">Aula de actualización <span style="font-family: montserratRegular; font-size: 1.05rem;">| Negocio Móvil</span> </span>     
+      <a class="seleccionable" href="#" data-toggle="modal" data-target="#modal"><img src="img/ayuda.svg" width="35px" alt=""></a>
     </nav>
     <div class="row">
       <div class="lateralMenu col-2" style="padding-top: 80px;">
@@ -44,24 +45,45 @@
         </div>
 
         <div class="contBotIzq">
-          <a href="fan.html"><button type="button" class="btn">Continuar</button></a>
+          <a href="fan.html"><button type="button" class="btn buttonSecondary">Continuar</button></a>
         </div>
       </div>
     </div>
     <footer>
       <nav class="footer fixed-bottom  row">            
+        <div class="col-12 row">
           <div class=" col-6 footerIzquierdo ">
-            <h5>© 2020 Diseño Digital & UX.</h5>
-          </div>
-          <div class="col-6 footerDerecho" >
             <h5>Entrenamiento y Scripting</h5>
           </div>
+          <div class="col-6 footerDerecho" >
+            <img src="img/firmaDerecha.svg" height="20px" alt="" style="padding-right: 45px;"><img src="img/firmaIzquierda.svg" height="20px" alt="">
+          </div>
+        </div>
       </nav>
     </footer>
   </div>
 
 
-
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title colorVioleta" >Info</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptates possimus, ad, atque pariatur cupiditate molestiae amet ducimus impedit blanditiis quas quia ipsam dolorem exercitationem aliquid, ut omnis repellendus voluptatibus!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint asperiores, id tempore deserunt minima provident, architecto odit, iusto veritatis cumque ipsa adipisci illum? Voluptas officiis distinctio quasi officia adipisci modi!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn buttonPrimary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
