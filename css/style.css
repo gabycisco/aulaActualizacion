@@ -1,5 +1,8 @@
 body, html{margin: 0; padding: 0; border: 0; box-sizing: border-box;}
 
+body, .container-fluid{
+  background-color: #f7f7f7;
+}
 /*INICIO - FONTS*/
   
   @font-face {font-family:coolveticaCompressed; src:url(../fonts/coolveticacompressedrg.ttf);}
@@ -27,7 +30,7 @@ body, html{margin: 0; padding: 0; border: 0; box-sizing: border-box;}
   .colorGris{color: #7E8B8C!important;}
 
   /*TEXTO - DESTACADO */
-  .importante{font-size: 1.2rem; font-weight: bold;}
+  .importante{font-size: 1.15rem; font-weight: bold;}
   .medio{font-size: 1rem; font-weight: bold;}
   .minimo{font-size: .85rem; font-weight: bold;}
 
@@ -322,11 +325,6 @@ h6{
   margin-top: 15px;
 }
 
-.resaltado{
-  color: #8E44AC!important;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
 
 .contIconsGral{
   margin-top: 25px;
@@ -393,7 +391,7 @@ h6{
   _border: 1px solid rgba(0,0,0,.125);
   padding: 25px;
   background-color: white;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: .45rem;  
   -webkit-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
   -moz-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
@@ -421,7 +419,7 @@ h6{
   padding-bottom: 20px;
 }
 
-.tarjetaMain p{
+.tarjetaMain p, .tarjetaMain li{
   font-family: montserratRegular;;
   color: #7E8B8C;
   text-align: center;
@@ -518,8 +516,9 @@ h5{
 }
 
 .lateralMenu{
-  background-color: #F5F1FF
-  _height: 100vh;
+  _background-color: #F5F1FF;
+  background-color: white;
+  height: 100vh;
   position: fixed;
   left: 0px;
   top: 0;
