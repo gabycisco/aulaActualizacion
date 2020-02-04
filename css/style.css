@@ -82,6 +82,12 @@ body, .container-fluid{
   padding-left: 15px;
 }
 
+.contenidoCentrado{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .bienvenida-imagen{
   z-index: -10000;
 }
