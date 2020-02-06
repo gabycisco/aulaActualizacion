@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Especialización - Negocio Móvil | Aula de Actualización</title>
+    <title>Especialización Customer - Negocio Móvil | Aula de Actualización</title>
 </head>
 <body>
 
@@ -18,9 +18,9 @@
     <div class="row">
       <div class="lateralMenu col-2" style="padding-top: 80px;">
         <div class="list-group">
-          <a href="fan.html"><button type="button" class="list-group-item list-group-item-action" style="background: #f7f7f7;"><img src="img/menos.svg" width="15px" alt="" style="  padding-bottom: 2px; padding-right: 5px;"> Menos contenido</button></a>
+          <a href="fan.html"><button type="button" class="list-group-item list-group-item-action" style="background: #f7f7f7;"><img src="img/menos.svg" width="15px" alt="" style="  padding-bottom: 2px; padding-right: 5px;"> Menos contenido</button></<a>
           <a href="facturacion.html"><button type="button" class="list-group-item list-group-item-action ">Facturación</button></a>
-          <a href="autogestion.html"><button type="button" class="list-group-item list-group-item-action">Autogestión</button></a>
+          <a href="autogestion.html"><button type="button" class="list-group-item list-group-item-action ">Autogestión</button></a>
           <a href="calidad.html"><button type="button" class="list-group-item list-group-item-action">Calidad</button></a>
           <a href="genesys.html"><button type="button" class="list-group-item list-group-item-action">Genesys</button></a>
           <a href="especializacion.html"><button type="button" class="radiusLast list-group-item list-group-item-action active">Especialización</button></a>
@@ -28,41 +28,44 @@
         </div>
       </div>
       <div class="lateralMain col-10">
-        <div class="tarjetaContenedor">
+        <!-- INICIO CONTENEDOR -->
+        <div class="tarjetaContenedor borderVioleta">
           <div class="tarjetaTitulo">
-            <h3>Selección de especialización</h3>
-            <hr>
+            <h3 class="colorVioleta">Especialización Customer</h3>
+            <span class="hrVioleta"><hr></span>
+            
           </div>
           <div class="tarjetaMain">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel exercitationem perferendis voluptatem atque distinctio nesciunt laboriosam tempora molestiae consequatur maiores reiciendis laborum similique, hic illo labore in aut itaque.</p>
-            <div class="col-10  offset-1 row contenidoCentrado">
-              <div class="col-3">
-                <div class="seleccionable">
-                  <a href="especializacionCustomer.html"><img src="img/icoCustomer.svg" width="100%" alt="" title=""></a>
-                  <a href="especializacionCustomer.html"><h6>Customer</h6></a>
-                </div>
+            <div class="row">
+              
+              <div class="col-8 contenidoCentrado">
+                <p class="colorVioleta importante">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio libero corrupti cumque reiciendis blanditiis sit asperiores, laboriosam quia exercitationem, nobis quisquam maxime. Culpa, repudiandae aut. In similique dolorum iste molestiae?</p>
               </div>
-              <div class="col-3">
-                <div class="seleccionable">
-                  <a href="../enDesarrollo.html"><img src="img/icoVentas.svg" width="100%" alt="" title=""></a>
-                  <a href="../enDesarrollo.html"><h6>Ventas</h6></a>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="seleccionable">
-                  <a href="../enDesarrollo.html"><img src="img/icoRRSS.svg" width="100%" alt="" title=""></a>
-                  <a href="../enDesarrollo.html"><h6>Redes Sociales</h6></a>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="seleccionable">
-                  <a href="../enDesarrollo.html"><img src="img/icoRetencion.svg" width="100%" alt="" title=""></a>
-                  <a href="../enDesarrollo.html"><h6>Retención</h6></a>
-                </div>
+              <div class="col-4 contenidoCentrado">
+                <img src="img/icoCustomer.svg" width="25%" alt="">
               </div>
             </div>
           </div>
         </div>
+        <!-- FIN CONTENEDOR -->
+
+        <!-- INICIO CONTENEDOR -->
+        <div class="tarjetaContenedor">
+          <div class="tarjetaTitulo">
+            <h3>Condiciones Comerciales</h3>
+            <hr>
+          </div>
+          <div class="tarjetaMain contenidoCentrado" style="padding-top: 0;">
+            <iframe src="https://trainer.telecom.com.ar/mod/hvp/embed.php?id=32199" width="510" height="313" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://trainer.telecom.com.ar/mod/hvp/library/js/h5p-resizer.js" charset="UTF-8"></script>
+          </div>
+        </div>
+        <!-- FIN CONTENEDOR -->
+
+
+
+        <!-- <div class="contBotIzq">
+          <a href="calidad.html"><button type="button" class="btn buttonSecondary">Continuar</button></a>
+        </div> -->
       </div>
     </div>
     <footer>
@@ -78,7 +81,6 @@
       </nav>
     </footer>
   </div>
-
 
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -104,6 +106,7 @@
     </div>
   </div>
 </div>
+
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
