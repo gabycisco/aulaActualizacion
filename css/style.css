@@ -82,10 +82,15 @@ body, .container-fluid{
   padding-left: 15px;
 }
 
+a:visited{
+  color: #1BBB9A!important;
+  font-weight: bold;
+}
 .contenidoCentrado{
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  display: flex!important;
+  justify-content: center!important;
+  align-content: center!important;
+  align-items: center!important;
 }
 
 .bienvenida-imagen{
@@ -605,3 +610,11 @@ h5{
   font-size: .85rem;
 }
 
+/* INICIO ACORDEON */
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #EAE6F8!important;
+  border-bottom: 1px solid  rgba(0,0,0,.125);
+}
+/* FIN ACORDEON */
