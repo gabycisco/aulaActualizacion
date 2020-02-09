@@ -134,6 +134,14 @@ a:visited{
   right: 0;
 }
 
+/* INICIO BORDES */
+.bordeImg{
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(209, 209, 209,1);
+  -moz-box-shadow: 5px 5px 20px 1px rgba(209, 209, 209,1);
+  box-shadow: 5px 5px 20px 1px rgba(209, 209, 209,1);
+}
+/* FIN BORDES */
+
 .container-fluid{
   position: fixed;
   z-index: 100;
@@ -408,6 +416,8 @@ h6{
   -moz-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
   box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
 }
+
+
 
 .tarjetaEvaluaciones{
   background-color: white;
