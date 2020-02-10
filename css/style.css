@@ -37,6 +37,7 @@ body, .container-fluid{
   /*LINEA SEPARADORA */
   .hrVioleta hr, .hrcolor {height: 1px; border: 0; _color: #8f599f; background-color: #8f599f;}
   .hrVerde hr, .hrcolor {height: 1px; border: 0; color: #1BBB9A; background-color: #1BBB9A;}
+  .hrBlanco hr, .hrcolor {height: 1px; border: 0; color: #fff; background-color: #fff;}
 
   /*HIPERVINCULOS */
   .noDecoration{text-decoration: none;}
@@ -58,6 +59,7 @@ body, .container-fluid{
   -ms-transition: none !important;
   -o-transition: none !important;
 }
+
 
 .container-menu{
   background-color: brown;

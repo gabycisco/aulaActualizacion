@@ -32,9 +32,8 @@
 
 
         <div class="tarjetaContenedor ">
-          <div style="background-size:contain; background-image: url(img/bannerVerde.svg); background-size: auto; height: 275px; background-repeat: no-repeat; display: flex; align-items: center;">
-            <h1 class="colorVerde" style="color: white!important; text-align: left; padding-left: 50px;">Especialización <br> Customer</h1>
-
+          <div class="tarjetaContenedor borderVerde" style=" background-image: url(img/bannerVerde.svg);  background-repeat: no-repeat; width: 100%; background-size: cover;">
+            <h1 class="colorVerde" style="color: white!important; text-align: left; padding-left: 50px;padding-top: 30px; padding-bottom: 30px;">Especialización <br> Customer</h1>
           </div>
           <p class="importante colorGris">Utilizando los siguientes links podrás conocer los contenidos pensados para tu perfil de atención.</p>
           <br>
@@ -82,39 +81,43 @@
         <!-- FIN CONTENEDOR -->
 
         <!-- INICIO CONTENEDOR -->
-        <div style="display: flex; align-content: space-around;">
-          <div class="tarjetaContenedor borderVioleta"  style="width: 48%; padding-left: 15px;">
-            <div class="tarjetaTitulo">
-              <h3 class="colorVioleta">Evaluación</h3>
-              <span class="hrVioleta"><hr></span>
-            </div>
-            <div class="tarjetaMain">
-              <div>
-                <p class="colorVioleta"><span class="importante">Finalizaste el recorrido!</span> A continuación encontrarás tu instancia de evaluación para afirmar los conocimientos necesarios para la atención. Recorda que contas con todas las herramientas para resolver tus dudas.</p>
-                <p class="colorVioleta importante">La instancia se aprueba con 80% de las respuestas correctas. En caso de no superar este umbral, ¡tendrás una nueva oportunidad!</p>
+        <div class="tarjetaContenedor borderVioleta" style="background: #5C3289;">
+          <div class="tarjetaMain">
+            <div class="row">
+              <div class="col-4 contenidoCentrado">
+               <img src="img/evaluacion.svg" width="65%" alt=""> 
               </div>
-              <div class="col-12 contBotones row">
-                <div class="col-12" style="display: flex;justify-content: flex-start;">
-                  <div><a href="../enDesarrollo.html"><button type="button" class="btn buttonPrimary">Evaluación</button></a></div>
-                  <div style="margin-left: 15px;"><a href="../enDesarrollo.html"><button type="button" class="btn buttonPrimary">Recuperatorio</button></a></div>
-                </div>
-              </div>
-            </div>
-          </div>  
-          <div style="width: 4%;"></div>
-          <div class="tarjetaContenedor borderVerde" style="width: 48%;">
-            <div class="tarjetaTitulo">
-              <h3 class="colorVerde">Ayudanos a mejorar!</h3>
-              <span class="hrVerde"><hr></span>
-            </div>
-            <div class="tarjetaMain">
-              <div class="row" style="display: flex; align-content: space-between;">
+              <div class="col-8 contenidoCentrado row">
                 <div class="col-12">
-                  <p class="colorVerde">Te invitamos a responder una breve encuesta que nos ayudará a mejorar este espacio pensado para vos.</p>
+                  <h1 class="colorBlanco" style="margin-bottom: 15px;">Finalizaste el recorrido!</h1>
+                  <p class="colorBlanco">A continuación encontrarás tu instancia de evaluación para afirmar los conocimientos necesarios para la atención. <span class="importante">Recorda que contas con todas las herramientas para resolver tus dudas.</span></p>
+                  <p class="colorBlanco">La instancia <span class="importante">se aprueba con 80%</span> de las respuestas correctas. En caso de no superar este umbral, ¡tendrás una nueva oportunidad!</p>
                 </div>
-                <div class="col-12" style="margin-top: 30px;">
-                  <a href="https://trainer.telecom.com.ar/mod/feedback/view.php?id=31577"><button type="button" class="btn buttonSecondary">Ir a la encuesta</button></a>
+                <div class="col-12 contBotones row">
+                  <div class="col-12" style="display: flex;justify-content: flex-start;">
+                    <div><a href="../enDesarrollo.html"><button type="button" class="btn buttonPrimary">Evaluación</button></a></div>
+                    <div style="margin-left: 15px;"><a href="../enDesarrollo.html"><button type="button" class="btn buttonPrimary">Recuperatorio</button></a></div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIN CONTENEDOR -->
+
+        <!-- INICIO CONTENEDOR -->
+        <div class="tarjetaContenedor borderVerde" style=" background-image: url(img/bannerVerde.svg);  background-repeat: no-repeat; width: 100%; background-size: cover;">
+          <div class="tarjetaMain">
+            <div class="row">
+              <div class="col-3 cotenidoCentrdo">
+                <h1 class="colorBlanco" style="padding-left: 50px;">Ayudanos</h1>
+                <h1 class="colorBlanco" style="padding-left: 50px;">a mejorar!</h1>
+              </div>
+              <div class="col-6 contenidoCentrado">
+                <p class="colorVioleta importante">Te invitamos a responder una breve encuesta que nos ayudará a mejorar este espacio pensado para vos.</p>
+              </div>
+              <div class="col-3 contenidoCentrado">
+                <a href="https://trainer.telecom.com.ar/mod/feedback/view.php?id=31577"><button type="button" class="btn buttonSecondary">Ir a la encuesta</button></a>
               </div>
             </div>
           </div>
