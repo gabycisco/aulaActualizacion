@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Inicio | Aula de Actualización</title>
+
+    <script type="text/javascript">
+      var url_string = window.location;
+      var url = new URL(url_string);
+      var name = url.searchParams.get("name");
+      window.onload = function() {
+        document.getElementById('nombre').innerHTML = name;
+      }  
+    </script>
 </head>
 <body>
 
@@ -21,7 +30,7 @@
                 <h1>Actualización</h1>
             </div>
             <div class="col-11">
-              <h3>Bienvenido</h3>
+              <h3>Bienvenido <span id="nombre"></span></h3>
               <h6>¡Estamos muy contentos de que hayas vuelto!</br>
               Creamos este espacio para que puedas actualizarte fácilmente y así retomar tus tareas con todo lo que necesitas saber.</h6>
               <div class="contBotDer">
@@ -47,7 +56,6 @@
         </footer>
 
     </div>
-
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
