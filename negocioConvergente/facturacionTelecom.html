@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <title>Facturación - Negocio Convergente | Aula de Actualización</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1 titnav" style="color: white;">Aula de actualización <span style="font-family: montserratRegular; font-size: 1.05rem;">| Negocio Convergente</span> </span>     
+      <a class="seleccionable" href="#" data-toggle="modal" data-target="#modal"><img src="../img/ayuda.svg" width="35px" alt=""></a>
+    </nav>
+    <div class="row">
+      <div class="lateralMenu col-2" style="padding-top: 80px;">
+        <div class="list-group">
+          <a href="fan.html"><button type="button" class="list-group-item list-group-item-action" style="background: #f7f7f7;"><img src="../img/menos.svg" width="15px" alt="" style="  padding-bottom: 2px; padding-right: 5px;"> Menos contenido</button></a>
+          <a href="facturacion.html"><button type="button" class="list-group-item list-group-item-action active">Facturación</button></a>
+          <a href="autogestion.html"><button type="button" class="list-group-item list-group-item-action">Autogestión</button></a>
+          <a href="calidad.html"><button type="button" class="list-group-item list-group-item-action">Calidad</button></a>
+          <a href="genesys.html"><button type="button" class="list-group-item list-group-item-action">Genesys</button></a>
+          <a href="especializacion.html"><button type="button" class="radiusLast list-group-item list-group-item-action">Especialización</button></a>
+          <!-- <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button> -->
+        </div>
+      </div>
+    
+      <div class="lateralMain col-10">
+
+        <!-- INICIO CONTENEDOR -->
+        <div class="tarjetaContenedor" id="menuCollapsable">
+          <div class="tarjetaTitulo">
+            <h3>Facturación</h3>
+            <hr>
+          </div>
+          <div class="tarjetaMain">
+            <p class="importante">¡Repasemos los conceptos principales de la facturación de <span class="colorVerde">los 3 negocios</span> de la compañía! <br>
+            <span class="colorVerde">Ingresá en cada link para conocer todo sobre Facturación.</span> </p><br>  
+
+            <div class="col-10  offset-1 row contenidoCentrado">
+              <div class="col-2">
+                <div class="seleccionable">
+                  <a href="facturacionPersonal.html" role="button"><img src="../img/icoFactPersonal.svg" width="100%" alt="" title=""></a>
+                  <!-- <a data-toggle="collapse" href="#factPersonal" role="button" aria-expanded="true" aria-controls="factPersonal"><h6>Personal <br><br></h6></a> -->
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="seleccionable">
+                  <img src="../img/icoFactTelecomSel.svg" width="100%" alt="" title="">
+                  <!-- <a data-toggle="collapse" href="#factTelecom" role="button" aria-expanded="true" aria-controls="factTelecom"><h6>Telecom <br><br></h6></a> -->
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="seleccionable">
+                  <a href="facturacionCable.html" role="button"><img src="../img/icoFactCable.svg" width="100%" alt="" title=""></a>
+                  <!-- <a data-toggle="collapse" href="#factCable" role="button" aria-expanded="true" aria-controls="factCable"><h6>Cablevisión Fibertel</h6></a> -->
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+        <!-- FIN CONTENEDOR -->
+
+          <!-- INICIO CONTENEDOR -->
+          <div class="tarjetaContenedor">
+            <div class="tarjetaTitulo">
+              <h3>Ciclos de Facturación Telecom</h3>
+              <hr>
+            </div>
+            <div class="tarjetaMain">
+              <p>Cada factura tiene un ciclo de facturación fijo. Hasta que se emita la primera factura del cliente no sabremos qué ciclo se asignará.</p>
+              <p>Este ciclo determina cuál será la fecha de vencimiento y cuáles son los consumos que aparecerán en la misma, como también la cantidad de días que incluirá el periodo.</p>
+              <div class="contenidoCentrado">   
+                <img src="../img/cicloTelecom1.png" width="60%" alt="">       
+              </div>
+              <p>Los dos primeros números de la factura nos indican el ciclo al que pertenece el cliente.</p>
+
+              <div class="contenidoCentrado">   
+                <img src="../img/cicloTelecom2.png" width="60%" alt="">       
+              </div>
+            </div>
+          </div>
+          <!-- FIN CONTENEDOR -->
+
+          <!-- INICIO CONTENEDOR -->
+          <div class="tarjetaContenedor">
+            <div class="tarjetaTitulo">
+              <h3>Consulta de factura en Siebel</h3>
+              <hr>
+            </div>
+            <div class="tarjetaMain">
+              <p>Desde la visión global de productos y servicios en Siebel, sección “Estado de facturas”, botón consultar. Al posicionarnos sobre el vencimiento elegido, presionamos el botón “Visualizar”.</p>
+              <div class="contenidoCentrado">   
+                <img src="../img/factSiebel1.png" width="80%" alt="">       
+              </div>
+            </div>
+          </div>
+          <!-- FIN CONTENEDOR -->
+
+             <!-- INICIO CONTENEDOR -->
+             <div class="tarjetaContenedor">
+              <div class="tarjetaTitulo">
+                <h3>Visualización de la Facturación</h3>
+                <hr>
+              </div>
+              <div class="tarjetaMain">
+                <div class="contenidoCentrado">   
+                  <img src="../img/factTelecom-visual1.png" width="80%" alt="">       
+                </div>
+              </div>
+              <br>
+              <div class="tarjetaMain">
+                <div class="contenidoCentrado">   
+                  <img src="../img/factTelecom-visual2.png" width="80%" alt="">       
+                </div>
+              </div>
+              <br>
+              <div class="tarjetaMain">
+                <div class="contenidoCentrado">   
+                  <img src="../img/factTelecom-visual3.png" width="80%" alt="">       
+                </div>
+              </div>
+            </div>
+            <!-- FIN CONTENEDOR -->
+
+
+            <!-- INICIO CONTENEDOR -->
+            <div class="tarjetaContenedor">
+              <div class="tarjetaTitulo">
+                <h3>Items a explicar al cliente</h3>
+                <hr>
+              </div>
+              <div class="tarjetaMain">
+                <div class="row">
+                  <div class="col-4 contenidoCentrado">
+                    <img src="../img/speech.svg" width="50%" alt="">
+                  </div>
+                  <div class="col-8 contenidoCentrado">
+                    <ul>
+                      <li>Período abono facturado: cantidad de días, importe. </li>
+                      <li>Cargos fijos de servicios adicionales (si los tuviera).</li>
+                      <li>Bonificación por descuentos y promociones.</li>
+                      <li>Consumo y período de medición.</li>
+                      <li>Importe total. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- FIN CONTENEDOR -->
+
+            <!-- INICIO CONTENEDOR -->
+            <div class="tarjetaContenedor">
+              <div class="tarjetaTitulo">
+                <h3>Primera Factura</h3>
+                <hr>
+              </div>
+              <div class="tarjetaMain">
+                <div class="contenidoCentrado">   
+                  <img src="../img/factTelecom-1ra.png" width="80%" alt="">       
+                </div>
+                <br>
+                <p class="importante colorVioleta">¿Qué va a pagar en la primera factura de Internet?</p>
+                <ul>
+                  <li>Fibertel Lite + Voz (el proporcional desde la fecha de alta hata el cierre del ciclo + el mes en curso).</li>
+                  <li>Consumo de línea (se paga a mes vencido).</li>
+                </ul>
+              </div>
+            </div>
+            <!-- FIN CONTENEDOR -->
+
+            <!-- INICIO CONTENEDOR -->
+          <div class="tarjetaContenedor borderVioleta" style="background: #5C3289; padding-top: 0!important; padding-bottom: 0!important; margin-bottom: 65px;">
+            <div class="tarjetaMain">
+              <div class="row">
+                <div class="col-4 contenidoCentrado">
+                <img src="../img/lampara.svg" width="50%" alt=""> 
+                </div>
+                <div class="col-8 contenidoCentrado row">
+                  <div class="col-12">
+                    <p class="importante colorBlanco">¡No te olvides de leer el resto de los módulos de facturación para repasar todos los negocios!</p>
+      
+                  </div>
+                  <div class="col-12 contBotones row" style="padding-top: 0;">
+                    <div class="col-12" style="display: flex;justify-content: flex-start; margin-left: -5px;">
+                      <div><a href="facturacion.html" role="button"><button type="button" class="btn buttonPrimary">Continuar</button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIN CONTENEDOR -->
+
+
+        <!-- <div class="contBotIzq">
+          <a href="autogestion.html"><button type="button" class="btn buttonSecondary">Continuar</button></a>
+        </div> -->
+      </div>
+    </div>
+    <footer>
+      <nav class="footer fixed-bottom  row">            
+        <div class="col-12 row">
+          <div class=" col-6 footerIzquierdo ">
+            <h5>Entrenamiento y Scripting</h5>
+          </div>
+          <div class="col-6 footerDerecho" >
+            <img src="../img/firmaDerecha.svg" height="20px" alt="" style="padding-right: 45px;"><img src="../img/firmaIzquierda.svg" height="20px" alt="">
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title colorVioleta" >Info</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="colorGris">Si tenés alguna consulta sobre cómo navegar este espacio, preguntale a tu superior inmediato.</p>
+        <p class="colorGris">Para ampliar información de los contenidos, recordá que contás con la siguiente herramienta:</p  >
+        <ul>
+          <li class="colorGris">Base de conocimientos convergente.</li>
+          <li class="colorGris">Por dudas administrativas, podés comunicarte con: <a class="colorVioleta" href="mailto:auladeactualizacion@teco.com.ar">auladeactualizacion@teco.com.ar</a></li>
+        </ul>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn buttonPrimary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<script>
+  $(function(){  
+  
+      $(document).ready(function(){ 
+      $('.collapse').on('show.bs.collapse',function(){
+      $('.collapse.show').collapse('toggle');
+      });
+    });
+  
+  });
+  </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
