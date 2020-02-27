@@ -176,6 +176,17 @@ body, .container-fluid{
 /* FIN PANTALLA CARGA */
 
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/precarga.gif') 50% no-repeat rgb(249,249,249);
+  opacity: .9;
+}
+
 
 .container-menu{
   background-color: brown;
@@ -535,7 +546,16 @@ h6{
   box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
 }
 
-
+.tarjetaContenedorTit{
+  _border: 1px solid rgba(0,0,0,.125);
+  _padding: 25px;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: .45rem;  
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  -moz-box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+  box-shadow: 5px 5px 20px 1px rgba(237,237,237,1);
+}
 
 .tarjetaEvaluaciones{
   background-color: white;
