@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Comunicados | Kit de Mandos Medios</title>
+    <style>
+      a{
+        color: white!important;
+      }
+      a:visited
+      {
+        color: white!important;
+      }
+      a:active{
+        color: #8f599f!important;
+      }
+
+      .active{
+        color: #8f599f!important;
+      }
+      
+      p{
+        text-align: center;
+        _margin-top: 10px;
+      }
+      .contComus{
+        margin-top: 45px;
+      }
+      .opacidad{
+        width: 100%;
+        height: 100vh;
+        _background-color: red;
+        background-color: rgba(255, 255, 255, 0.6 );
+        display: flex;
+        position: absolute;
+      }
+
+      .contDer{
+        height: auto!important;
+        padding-top: 0!important;
+      }
+      .contDer h1{
+        line-height: 30%!important;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+      <div class="opacidad"></div>
+      <div class="imgFondo">
+        <img src="../img/backgroundCut.svg" alt="">
+      </div>
+      
+        <div class="contenedor-principal row" style="padding-left: 0; padding-right: 0;">
+
+          <nav class="navbar fixed-top navbar-light bg-light">
+            <a href="https://trainer.telecom.com.ar/mod/url/view.php?id=32596"><span class="navbar-brand mb-0 h1 titnav" style="color: white;">Kit de Mandos Medios</span></a>
+            <div> 
+              <!-- INICIO NAV -->
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://trainer.telecom.com.ar/mod/url/view.php?id=32689">Manual de uso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://trainer.telecom.com.ar/mod/url/view.php?id=32690">Hojas de ruta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Comunicados</a>
+                </li>
+                <li class="nav-item">
+                  <a style="margin-left: 15px;" class="seleccionable" href="#" data-toggle="modal" data-target="#modal"><img src="../img/ayuda.svg" width="35px" alt=""></a>
+                </li>
+              </ul>
+            </ul>
+            </div>
+          </nav>
+          <!-- FIN NAV -->
+
+          <div style="z-index: 1000;">
+<!--             <div style="display:flex; justify-content">
+              <h1 class="colorVerde" style="text-align: center;">Comunicados</h1>
+              <h6 class="colorGris" style="text-align: center;">Hacé click sobre las comunicaciones para verlas a pantalla completa.</h6>
+            </div> -->
+            <div class="contDer row">
+              <div class="col-12 tituloMM">
+                  <h1>Comunicados</h1>
+              </div>
+              <div class="col-12">
+                <h6>Hacé click sobre las comunicaciones para verlas a pantalla completa.</h6>
+              </div>
+            </div> 
+
+
+            <div class="contComus contenidoCentrado">
+              <div class="row" style="display: flex; justify-content: center;"> 
+                <div style="width: 175px;">
+                  <a class="seleccionable" href="#" data-toggle="modal" data-target="#zoom1"><img class="bordeImg" src="../docs/miniComuAula1.jpg" width="100%" alt=""></a>
+                  <a class="seleccionable" href="#" data-toggle="modal" data-target="#zoom1"><p class="colorVerde">Primera Comunicación <br> 14-02-2020</p></a>
+                </div>
+                <div style="width: 175px; margin-left: 50px;">
+                  <a class="seleccionable" href="#" data-toggle="modal" data-target="#zoom2"><img class="bordeImg" src="../docs/miniComuAula2.jpg" width="100%" alt=""></a>
+                  <a class="seleccionable" href="#" data-toggle="modal" data-target="#zoom2"><p class="colorVerde">Segunda Comunicación <br> 20-02-2020</p></a>
+                </div>
+                <div style="width: 175px; margin-left: 50px;">
+                  <a class="seleccionable" href="#" data-toggle="modal" data-target="#zoom3"><img class="bordeImg" src="../docs/miniComuAula3.jpg" width="100%" alt=""></a>
+                  <a class="seleccionable" href="#" data-toggle="modal" data-target="#zoom3"><p class="colorVerde">Tercera Comunicación <br> 27-02-2020</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <footer>
+          <nav class="footer fixed-bottom  row">            
+            <div class="col-12 row">
+              <div class=" col-6 footerIzquierdo ">
+                <h5>Entrenamiento y Scripting</h5>
+              </div>
+              <div class="col-6 footerDerecho" >
+                <img src="../img/firmaDerecha.svg" height="20px" alt="" style="padding-right: 45px;"><img src="../img/firmaIzquierda.svg" height="20px" alt="">
+              </div>
+            </div>
+          </nav>
+        </footer>
+    </div>
+
+  <!-- Modal Info -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title colorVioleta importante" >Info</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="colorGris">Por dudas administrativas envianos un mail a: <a class="colorVioleta" href="mailto:Auladeactualizacion@teco.com.ar">Auladeactualizacion@teco.com.ar</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn buttonPrimary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="zoom1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div style="display: flex; justify-content: flex-end;">
+        <a href="" data-dismiss="modal">
+          <div style="margin-right:10px; margin-top: 10px;">
+            <h6 class="colorVioleta">[x] Cerrar</h6>
+          </div>
+        </a>
+      </div>
+        <img src="../docs/comuAula1.png" width="100%" max-height="100vh" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="zoom2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div style="display: flex; justify-content: flex-end;">
+        <a href="" data-dismiss="modal">
+          <div style="margin-right:10px; margin-top: 10px;">
+            <h6 class="colorVioleta">[x] Cerrar</h6>
+          </div>
+        </a>
+      </div>
+        <img src="../docs/comuAula2.png" width="100%" max-height="100vh" alt="">
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="zoom3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div style="display: flex; justify-content: flex-end;">
+        <a href="" data-dismiss="modal">
+          <div style="margin-right:10px; margin-top: 10px;">
+            <h6 class="colorVioleta">[x] Cerrar</h6>
+          </div>
+        </a>
+      </div>
+        <img src="../docs/comuAula3.png" width="100%" max-height="100vh" alt="">
+
+    </div>
+  </div>
+</div>
+
+
+  
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
