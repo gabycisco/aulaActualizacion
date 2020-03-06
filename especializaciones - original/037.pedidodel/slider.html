@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es" class="export">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Touch, responsive, flickable carousels">
+  <meta name="viewport" content="width=device-width">
+  <title>Slader</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script
+    src="../../js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../../css/flickity.css">
+    <script src="../../js/flickity.pkgd.min.js"></script>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        _font-weight: bold;
+        background-color: #BDC2C6;
+      }
+
+      .carousel-cell {
+        width: 100%; /* full width */
+        height: 95vh;
+        background: #BDC2C6;
+        /* center images in cells with flexbox */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .backgroundAudio{
+        background-image: url(../img/posterAudio.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .backgroundVideo{
+        background-image: url(../img/posterVideo.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .backgroundFin{
+        background-image: url(../img/DiapositivaFin.PNG);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .carousel.is-fullscreen .carousel-cell {
+        height: 100%;
+      }
+
+      .carousel-cell img {
+        display: block;
+        max-height: 100%;
+      }
+
+      .flickity-button{
+        color: #590BB2;
+      }
+    </style>
+</head>
+<body>
+  <div class="carousel" data-flickity>
+    <div class="carousel-cell"><img src="img/Diapositiva1.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva2.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva3.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva4.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva5.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva6.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell backgroundVideo"><video src="https://trainer.telecom.com.ar/repository/coursefilearea/file.php/715/APP_de_ventas_cater.mp4" width="100%" controls poster="../img/posterVideo.png"></video></div>
+	  <div class="carousel-cell backgroundVideo"><video src="https://trainer.telecom.com.ar/repository/coursefilearea/file.php/715/PEDIDODEL_SIEBEL_CATER.mp4" width="100%" controls poster="../img/posterVideo.png"></video></div>
+	  <div class="carousel-cell"><img src="img/Diapositiva9.PNG" width="100%" alt=""></div>
+	  <div class="carousel-cell"><img src="img/Diapositiva10.PNG" width="100%" alt=""></div>
+	  <div class="carousel-cell"><img src="img/Diapositiva11.PNG" width="100%" alt=""></div>
+	  <div class="carousel-cell"><img src="img/Diapositiva12.PNG" width="100%" alt=""></div>
+	  <div class="carousel-cell"><img src="img/Diapositiva13.PNG" width="100%" alt=""></div>
+	  <div class="carousel-cell"><img src="img/Diapositiva14.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell backgroundFin">
+      <div class="contBotIzq">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a href="#" onClick="history.back()"><button type="button" class="btn buttonSecondary">Volver</button></a>
+      </div>
+    </div>
+    <!-- FIN - SLIDE FINAL -->
+  </div>
+  <!-- INICIO - AUDIO -->
+  <!-- <div class="carousel-cell backgroundAudio"><div><br><br><br><br><br><br><br><audio src="audio/1.mp4" controls></audio></div></div> -->
+  <!-- FIN - AUDIO -->
+
+  <!-- INICIO - VIDEO -->
+  <!-- <div class="carousel-cell backgroundVideo"><video src="video/1.mp4" width="100%" controls poster="../img/posterVideo.png"></video></div> -->
+  <!-- FIN - VIDEO -->
+
+
+  <script src="../../js/jquery-3.4.1.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

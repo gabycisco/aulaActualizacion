@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  _font-weight: bold;
+  background-color: #BDC2C6;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 95vh;
+  background: #BDC2C6;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundAudio{
+  background-image: url(../img/slider/backgroundAudio.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.backgroundVideo{
+  background-image: url(../img/slider/backgroundVideo.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.backgroundFin{
+  background-image: url(../img/slider/backgroundEnd.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.backgroundSimulador{
+  background-image: url(../img/slider/backgroundSimulador.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell img {
+  display: block;
+  max-height: 100%;
+}
+
+.flickity-button{
+  color: #590BB2;
+}
