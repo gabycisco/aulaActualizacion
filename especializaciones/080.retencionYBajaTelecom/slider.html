@@ -54,8 +54,15 @@
         background-repeat: no-repeat;
       }
 
-      .backgroundSimulador{
-        background-image: url(../img/posterSimulador.png);
+      .background5{
+        background-image: url(img/Diapositiva5.PNG);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .background14{
+        background-image: url(img/Diapositiva14.PNG);
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -73,20 +80,53 @@
       .flickity-button{
         color: #590BB2;
       }
+
+      .botCentrado{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
     </style>
 </head>
 <body>
   <div class="carousel" data-flickity>
     <div class="carousel-cell"><img src="img/Diapositiva1.PNG" width="100%" alt=""></div>
     <div class="carousel-cell"><img src="img/Diapositiva2.PNG" width="100%" alt=""></div>
-    <div class="carousel-cell backgroundVideo"><video src="https://trainer.telecom.com.ar/repository/coursefilearea/file.php/715/Retenci%C3%B3n_2.0.mp4" width="100%" controls poster="../img/posterVideo.png"></video></div>
-    <div class="carousel-cell backgroundVideo"><video src="https://trainer.telecom.com.ar/repository/coursefilearea/file.php/715/Retenci%C3%B3n_Servicios_Premium.mp4" width="100%" controls poster="../img/posterVideo.png"></video></div>
-
-
+    <div class="carousel-cell"><img src="img/Diapositiva3.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva4.PNG" width="100%" alt=""></div>
+    <!-- INICIO - SLIDE 5 -->
+    <div class="carousel-cell background5">
+      <div class="contBotIzq botCentrado">
+        <div>
+          <a href="https://procesos/accesos click/viewClick.aspx?proceso=Registro%20Retenci%C3%B3n%20Positiva-%20Front" target="_blank"><button type="button" class="btn buttonSecondary">Ir al proceso</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN - SLIDE 5 -->
+    <div class="carousel-cell"><img src="img/Diapositiva6.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva7.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva8.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva9.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva10.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva11.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva12.PNG" width="100%" alt=""></div>
+    <div class="carousel-cell"><img src="img/Diapositiva13.PNG" width="100%" alt=""></div>
+    <!-- INICIO - SLIDE 14 -->
+    <div class="carousel-cell background14">
+      <div class="contBotIzq botCentrado">
+        <div>
+          <a href="https://procesos/accesos click/viewClick.aspx?proceso=Cascada%20de%20Retenci%C3%B3n" target="_blank"><button type="button" class="btn buttonSecondary">Ir al proceso</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- FIN - SLIDE FINAL -->    <div class="carousel-cell"><img src="img/Diapositiva15.PNG" width="100%" alt=""></div>
+    <!-- INICIO - SLIDE 14 -->
     <div class="carousel-cell backgroundFin">
-      <div class="contBotIzq">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <a href="#" onClick="history.back()"><button type="button" class="btn buttonSecondary">Volver</button></a>
+      <div class="contBotIzq botCentrado">
+        <div>
+          <a href="#" onClick="history.back()"><button type="button" class="btn buttonSecondary">Volver</button></a>
+        </div>
       </div>
     </div>
     <!-- FIN - SLIDE FINAL -->
@@ -96,7 +136,7 @@
   <!-- FIN - AUDIO -->
 
   <!-- INICIO - VIDEO -->
-  <!--  -->
+  <!-- <div class="carousel-cell backgroundVideo"><video src="video/1.mp4" width="100%" controls poster="../img/posterVideo.png"></video></div> -->
   <!-- FIN - VIDEO -->
 
 

@@ -30,7 +30,7 @@ body, .container-fluid{
   .colorGris{color: #7E8B8C!important;}
 
   /*TEXTO - DESTACADO */
-  .importante{font-size: 1.15rem; font-weight: bold;}
+  .importante{font-size: 1.15rem!important; font-weight: bold!important;}
   .medio{font-size: 1rem; font-weight: bold;}
   .minimo{font-size: .85rem; font-weight: bold;}
 
